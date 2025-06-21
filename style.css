@@ -75,7 +75,7 @@ span{
     display: none;
 }
 section{
-    min-height: 100vh;
+    max-height: 100vh;
     padding: 5% 15%;
 }
 #home{
@@ -89,7 +89,7 @@ section{
 #home img{
     width: 18vw;
     border-radius: 50%;
-    margin-top: 50%;
+    margin-top: 3em;
 }
 .info-box{
     display: flex;
@@ -105,4 +105,124 @@ section{
 .info-box h3{
     font-size: 2em;
     font-weight: 400;
+}
+.info-box p{
+    opacity: 0.8;
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn:nth-of-type(2){
+    background-color: white;
+    color: var(--background-color)
+}
+.btn-box .btn:nth-of-type(2)hover{
+    background-color: var(--background-color);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--second-background);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+}
+#about{
+    background-color: var(--second-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2em;
+}
+.about-box h1{
+    font-size: 5em;
+}
+.about-box p{
+    color: white;
+    opacity: 0.8;
+}
+.habilidades{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+}
+.habilidades ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: baseline;
+}
+.habilidades ul li span{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size:1.3em;
+    transition: 0.3s ease-in-out;
+}
+.habilidades ul li span:hover{
+    transform: translateX(10px);
+}
+.habilidades ul li i{
+    font-size: 1.2em;
+}
+.about-box h2{
+    font-size: 2.5em;
+}
+li{
+    list-style-type: none;
+}
+#services{
+    background-color: var(--background-color);
+}
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+.box{
+    border: 3px solid rgb(49, 49, 49); 
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box:hover{
+    border: 3px solid rgb(100, 100, 100);
+}
+.box p{
+    opacity: 0.8;
+}
+.box h1{
+    font-size: 2em;
+}
+.box img{
+    min-width: 250px;
+    border-radius: 0.5em;
 }
