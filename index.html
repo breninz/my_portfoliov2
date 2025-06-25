@@ -6,10 +6,9 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-                            <!-- Navigation bar -->
+    <!-- Navigation bar -->
     <nav>  
         <a href="#" class="logo"><span>Breno</span></a>
         <ul class="links">
@@ -18,149 +17,144 @@
             <li><a href="#services">Serviços</a></li>
             <li><a href="#contact">Contato</a></li>
             <li><a href="#projects">Projetos</a></li>
-            </ul>
+        </ul>
 
-            <i class='bxr  bx-menu-wider' id="menu"  ></i> 
-
-            <a href="#contact"class="btn"> Contate-me</a>
+        <div class="nav-right">
+            <i class='bx bx-menu-wider' id="menu"></i> 
+            <a href="#contact" class="btn nav-btn">Contate-me</a>
+        </div>
     </nav>
-    <section id="home">
-        <img src="img/eu1.png" alt="tech">
-        <div class="info-box">
-            <h1><span>Olá, eu sou o Breno!</span></h1>
-            <h3><span>Desenvolvedor Web</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto sequi sunt non! Temporibus, ratione. Repellat tempora consequatur tempore, optio eos, libero quam harum voluptate laboriosam quo quasi facilis minus?</p>
-        </div>
-        <div class="btn-boxx">
-            <div class="btn">Contate-me</div>
-        </div>
-    </section>
-    
-<section id="about">
 
-    <div class="about-box">
+    <main class="content-wrapper">
+        <section id="home">
+            <img src="img/eu1.png" alt="Breno" class="profile-img">
+            <div class="info-box">
+                <h1><span>Olá, eu sou o Breno!</span></h1>
+                <h3><span>Desenvolvedor Web/UI UX Design</span></h3>
+                <p>Desenvolvedor Front-end especializado em criar experiências digitais intuitivas e responsivas. Combinando design atraente com código limpo para entregar projetos que impressionam visualmente e performam excepcionalmente!</p>
+            </div>
+            <div class="btn-boxx">
+                <a href="#contact" class="btn">Contate-me</a>
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-info">
+                        <h1><span>Sobre mim</span></h1>
+                        <p>Buscando experiência no mercado, sou apaixonado por transformar ideias em realidade digital. Minha abordagem combina atenção aos detalhes visuais com as melhores práticas de desenvolvimento para criar soluções que realmente funcionam para os usuários.</p>
+                    </div>
+                    <div class="skills-container">
+                        <!--- skills section -->
+                        <h2><span>Habilidades</span></h2>
+                        <div class="habilidades">
+                            <ul>
+                                <li><span><i class='bx bx-chevron-right'></i>HTML</span></li>
+                                <li><span><i class='bx bx-chevron-right'></i>CSS</span></li>
+                                <li><span><i class='bx bx-chevron-right'></i>JavaScript</span></li>
+                                <li><span><i class='bx bx-chevron-right'></i>Node</span></li>
+                                <li><span><i class='bx bx-chevron-right'></i>Angular</span></li>
+                                <li><span><i class='bx bx-chevron-right'></i>MySQL</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/eu1.png" alt="Breno" class="about-img">
+            </div>
+        </section>
+            <!--- services section -->
+        <section id="services">
+            <h1 class="header"><span>Serviços</span></h1>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="img/webdesign.jpg" alt="Web Design">
+                    <h2><span>Web Design</span></h2>
+                    <p>Criação de interfaces modernas e funcionais com foco em UX/UI, garantindo que cada projeto não apenas pareça incrível, mas também ofereça uma jornada intuitiva para o usuário.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/webdesign.jpg" alt="Web Development">
+                    <h2><span>Web Development</span></h2>
+                    <p>Implementação de designs pixel-perfect com HTML5, CSS3 e JavaScript moderno, construindo aplicações responsivas, acessíveis e otimizadas para performance.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/webdesign.jpg" alt="UI/UX">
+                    <h2><span>Otimização SEO</span></h2>
+                    <p>Desenvolvimento com práticas de SEO on-page, garantindo que seu site seja rapidamente indexado e bem posicionado nos mecanismos de busca.</p>
+                </div>
+            </div>
+        </section>
 
-       <div class="about-info">
-            <h1><span>Sobre mim</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum, labore eligendi excepturi inventore ea debitis vel laudantium adipisci obcaecati, fugiat ipsum iusto reprehenderit, omnis suscipit nihil animi dolorem natus.</p>
-        </div>
-        <h2><span>Habilidades</span></h2>
-        <div class="habilidades">
-            <ul>
-                <li>
-                    <span><i class='bxr  bx-chevron-right'></i>HTML</span>
-                </li>
-                <li>
-                    <span><i class='bxr  bx-chevron-right'></i>CSS</span>
-                </li>
-                <li>
-                    <span><i class='bxr  bx-chevron-right'></i>JavaScript</span>
-                </li>
-                    <li>
-                    <span><i class='bxr  bx-chevron-right'></i>Node</span>
-                </li>
-                <li>
-                    <span><i class='bxr  bx-chevron-right'></i>Angular</span>
-                </li>
-                <li>
-                    <span><i class='bxr  bx-chevron-right'></i>MySQL</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-        <img src="img/eu1.png" alt="Breno">
-</section>
+        <section id="contact">
+            <h1 class="header"><span>Contato</span></h1>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Sua mensagem</label>
+                    <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
 
-<section id="services">
-    <h1 class="header"><span>Serviços</span></h1>
+        <section id="projects">
+            <h1 class="header"><span>Projetos</span></h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img/webdesign.jpg" alt="Project 1">
+                    <h2><span>Cálculo de Shelf Life</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img/webdesign.jpg" alt="Project 2">
+                    <h2><span>Site de cosméticos da Natura</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img/webdesign.jpg" alt="Project 3">
+                    <h2><span>Aguarde...</span></h2>
+                    <p>Aguarde...</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="services-container">
-        <div class="box">
-            <h1><span>Web Design</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque sapiente inventore, cum dignissimos iusto repudiandae nihil quam tempore quia officia recusandae, aspernatur quo totam eius libero illum repellendus ad.</p>
-            <img src="img/webdesign.jpg" alt="">
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class='bx bx-location-plus'></i>
+                    <span>São Paulo</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-phone'></i>
+                    <span>11 40028922</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-mail-open'></i>
+                    <span>breno.rodrigues33@hotmail.com</span>
+                </div>
+            </div>
+            
+            <div class="footer-about">
+                <h3>Sobre os meus serviços</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perferendis!</p>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
         </div>
-                <div class="box">
-            <h1><span>Web Design</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque sapiente inventore, cum dignissimos iusto repudiandae nihil quam tempore quia officia recusandae, aspernatur quo totam eius libero illum repellendus ad.</p>
-            <img src="img/webdesign.jpg" alt="">
-        </div>
-                <div class="box">
-            <h1><span>Web Design</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque sapiente inventore, cum dignissimos iusto repudiandae nihil quam tempore quia officia recusandae, aspernatur quo totam eius libero illum repellendus ad.</p>
-            <img src="img/webdesign.jpg" alt="">
-        </div>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h1 class="header"><span>Contato</span></h1>
-    <form action="#">
-        <div class="input-box">
-            <span>Nome Completo</span>
-            <input type="text" placeholder="Digite seu nome completo" required>
-        </div>
-        <div class="input-box">
-            <span>Email</span>
-            <input type="email" placeholder="Digite seu email" required>
-        </div>
-        <div class="input-box">
-            <span>Sua mensagem</span>
-            <input type="text" placeholder="Digite sua mensagem" required>
-        </div>
-
-        <div class="btn">Enviar</div>
-    </form>
-</section>
-
-<section id="projects">
-        <h1 class="header"><span>Projetos</span></h1>
-        <div class="container-projects">
-        <div class="box">
-            <h1><span>Web Design</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque sapiente inventore, cum dignissimos iusto repudiandae nihil quam tempore quia officia recusandae, aspernatur quo totam eius libero illum repellendus ad.</p>
-            <img src="img/webdesign.jpg" alt="">
-        </div>
-                <div class="box">
-            <h1><span>Web Design</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque sapiente inventore, cum dignissimos iusto repudiandae nihil quam tempore quia officia recusandae, aspernatur quo totam eius libero illum repellendus ad.</p>
-            <img src="img/webdesign.jpg" alt="">
-        </div>
-                <div class="box">
-            <h1><span>Web Design</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque sapiente inventore, cum dignissimos iusto repudiandae nihil quam tempore quia officia recusandae, aspernatur quo totam eius libero illum repellendus ad.</p>
-            <img src="img/webdesign.jpg" alt="">
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="col-left">
-        <div class="col-box">
-            <span><i class='bx bx-location-plus'></i></span>
-            <span>São Paulo</span>
-        </div>
-        <div class="col-box">
-            <span><i class='bx bx-phone'></i></span>
-            <span>11 40028922</span>
-        </div>
-        <div class="col-box">
-             <span><i class='bxr  bx-mail-open'></i></span>
-            <span>breno.rodrigues33@hotmail.com</span>
-        </div>
-    </div>
-    
-    <div class="col-right">
-        <span>Sobre os meus serviços</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perferendis! Perspiciatis reprehenderit quaerat qui numquam ut non cupiditate cumque necessitatibus velit dolor, obcaecati eius aliquam natus nemo, quisquam beatae? Officiis.</p>
-        <div class="social-icons">
-           <i class='bx  bx-movie'></i> 
-           <i class='bx  bx-camera-portrait'></i> 
-           <i class='bx  bx-rgb'></i> 
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>
