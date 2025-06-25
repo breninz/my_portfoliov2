@@ -144,7 +144,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 2em;
+    gap: 1em;
 }
 .about-box h1{
     font-size: 5em;
@@ -226,7 +226,7 @@ li{
     min-width: 250px;
     border-radius: 0.5em;
 }
-#contato{
+#contact{
     background-color: var(--second-background);
 }
 form{
@@ -261,7 +261,7 @@ footer{
     justify-content: center;
     gap: 10em;
     bottom: 0;
-    background-color: var(--background-color);
+    background-color: var(--second-background);
     width: 100%;
     padding: 5em 15%;
 }
@@ -279,7 +279,7 @@ footer{
     font-size: 2em;
 }
 .col-box span{
-    font-size: 2em;
+    font-size: 1.5m;
 }
 .col-right{
     display: flex;
@@ -303,4 +303,152 @@ footer{
 }
 .social-icons i:hover{
     color: white;
+}
+#projects{
+    background-color: var(--background-color);
+}
+.container-projects{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3em;
+    padding: 2em 9%;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  section{
+    padding: 8em 15%;
+  }
+  nav .btn{
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1em 3em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+  }
+  .links a {
+    margin: 2em 0;
+    display: block;
+    font-size: 1.5em;
+    color: white;
+  }
+  .links.active {
+    display: block;
+  }
+  
+  #home h1 {
+    font-size: 4em;
+  }
+  #home h3 {
+    font-size: 2em;
+  }
+  #home img {
+    width: 24vw;
+  }
+  #about {
+    flex-direction: column;
+  }
+  #about img {
+    width: 32vw;
+  }
+  #about h1 {
+    font-size: 3em;
+  }
+  #about ul {
+    font-size: 1em;
+  }
+}
+
+/* General Responsive Fixes */
+@media (max-width: 768px) {
+  /* Fix about section layout */
+  #about {
+    flex-direction: column-reverse; /* Puts image below content */
+    gap: 2em;
+    padding-top: 2em;
+  }
+  
+  #about img {
+    width: 60vw !important; /* Better mobile image size */
+    margin: 0 auto; /* Center the image */
+  }
+  
+  .about-box {
+    width: 100%;
+  }
+  
+  .habilidades {
+    flex-direction: column;
+    gap: 1em !important;
+  }
+  
+  /* Fix home section */
+  #home img {
+    width: 40vw !important;
+  }
+  
+  .info-box h1 {
+    font-size: 2.8em !important;
+  }
+  
+  /* Fix services/projects grid */
+  .services-container, .container-projects {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Fix footer layout */
+  footer {
+    flex-direction: column;
+    gap: 3em;
+    text-align: center;
+  }
+  
+  .col-box {
+    justify-content: center;
+  }
+  
+  /* Fix contact form inputs */
+  form input {
+    padding: 1em 2em !important;
+    width: 100%;
+  }
+}
+
+/* Additional Mobile Fixes */
+@media (max-width: 480px) {
+  section {
+    padding: 8em 10% !important;
+  }
+  
+  .info-box h1 {
+    font-size: 2.2em !important;
+  }
+  
+  #about img {
+    width: 80vw !important;
+  }
+  
+  .about-box h1 {
+    font-size: 3em !important;
+  }
+  
+  .header {
+    font-size: 3em !important;
+  }
+  
+  .box {
+    padding: 2em !important;
+  }
 }
