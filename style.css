@@ -67,6 +67,21 @@ nav {
     font-weight: 800;
     color: white;
 }
+.github-icon,
+.linkedin-icon {   
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+.github-icon:hover,
+.linkedin-icon:hover {
+    transform: translateY(-10px);
+    transform: scale(1.2);
+}
+.logo img {
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+}
 
 .links {
     display: flex;
@@ -582,5 +597,10 @@ footer {
     /* Footer */
     .footer-container {
         grid-template-columns: 1fr;
+    }
+    .github-icon,
+    .linkedin-icon {    
+        width: 30px;
+        height: 30px;
     }
 }
