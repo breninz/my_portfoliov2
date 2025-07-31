@@ -178,33 +178,6 @@ span.gradient-text {
                remove-caret 0.1s 3.5s forwards; /* Remove o cursor após a digitação */
     width: 0;
 }
-
-/* Animação para o h3 */
-.typing-text-2 {
-    animation: typing 3s steps(50, end) 3s forwards,
-               blink-caret 0.75s step-end 8,
-               remove-caret 0.1s 7s forwards;
-    width: 0;
-}
-
-/* Animação para o parágrafo */
-.typing-text-3 {
-    white-space: normal;
-    animation: typing 3s steps(45, end) 4s forwards,
-               blink-caret 0.75s step-end 12,
-               remove-caret 0.1s 9s forwards;
-    width: 0;
-}
-
-/* Animação para o último h3 */
-.typing-text-4 {
-    white-space: normal;
-    animation: typing 3s steps(45, end) 5s forwards,
-               blink-caret 0.75s step-end 8,
-               remove-caret 0.1s 9s forwards;
-    width: 0;
-}
-
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
