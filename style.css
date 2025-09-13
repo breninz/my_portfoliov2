@@ -134,19 +134,12 @@ p{
     margin-right: 0.5rem;
 }
 .btn1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    display: inline-block;
     padding: 0.8rem 1.8rem;
     background: transparent;
-    color: white;
-    border: 2px solid white;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    color: rgb(6, 255, 243);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1.5rem;
     text-align: center;
 }
 .btn:hover, .btn1:hover {
@@ -340,6 +333,9 @@ span.gradient-text {
     overflow: hidden;
     transition: transform 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
@@ -512,7 +508,6 @@ footer {
         transition: all 0.5s ease-out;
         pointer-events: none;
     }
-    
     .links.active {
         clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
@@ -522,7 +517,6 @@ footer {
         display: block;
         z-index: 1001;
     }
-    
     .nav-btn {
         display: none;
     }

@@ -93,54 +93,82 @@
             </div>
         </section>
 
-        <section id="contact">
-            <h1 class="header"><span>Contato</span></h1>
-            <form action="#">
-                <div class="form-group">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" id="name" placeholder="Digite seu nome completo" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite seu email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Sua mensagem</label>
-                    <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </section>
+<section id="contact">
+  <h1 class="header"><span>Contato</span></h1>
 
-        <section id="projects">
-            <h1 class="header"><span>Projetos</span></h1>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="img/shelflife.webp" alt="Project 1">
-                    <h2><span>Cálculo de Shelf Life</span></h2>
-                    <p>Site com propósito de agilizar o cálculo do percentual de Shelf-Life dos produtos. A solução proposta é um sistema onde o usuário insere as datas de fabricação e validade, e o cálculo é feito automaticamente, garantindo mais rapidez e precisão.</p>
-                    <a href="https://site-calculo-shelf-life.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">
-                     Ver Projeto</a>
-                    <a href="https://github.com/breninz/site-calculo-shelf-life/" target="_blank" rel="noopener noreferrer" class="btn">
-                     Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="img/naturaproject.webp" alt="Project 2">
-                    <h2><span>Site de cosméticos da Natura</span></h2>
-                    <p>Site desenvolvido em inspiração com a loja de cosméticos "Natura", feito em grupo como trabalho de faculdade, utilizando somente HTML, CSS e JavaScript</p>
-                    <a href="https://projeto-natura.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">
-                     Ver Projeto</a>
-                     <a href="https://github.com/breninz/projeto-natura" target="_blank" rel="noopener noreferrer" class="btn">
-                     Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="img/" alt="Project 3">
-                    <h2><span>Aguarde...</span></h2>
-                    <p>Aguarde...</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- Formulário direto pro Formspree -->
+  <form action="https://formspree.io/f/xgvlqdrl" method="POST">
+    
+    <div class="form-group">
+      <label for="name">Nome Completo</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Sua mensagem</label>
+      <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+
+</section><section id="contact">
+  <h1 class="header"><span>Contato</span></h1>
+  <!-- Formulário direto pro Formspree -->
+  <form action="https://formspree.io/f/xgvlqdrl" method="POST">
+    <div class="form-group">
+      <label for="name">Nome Completo</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Sua mensagem</label>
+      <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+    </div>
+     <button type="submit" class="btn">Enviar</button>
+  </form>
+</section>
+
+<section id="projects">
+  <h1 class="header"><span>Projetos</span></h1>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="img/shelflife.webp" alt="Project 1">
+      <h2><span>Cálculo de Shelf Life</span></h2>
+      <p>Site com propósito de agilizar o cálculo do percentual de Shelf-Life dos produtos. A solução proposta é um sistema onde o usuário insere as datas de fabricação e validade, e o cálculo é feito automaticamente, garantindo mais rapidez e precisão.</p>
+      <div class="buttons">
+        <a href="https://site-calculo-shelf-life.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn1">Ver Projeto</a>
+        <a href="https://github.com/breninz/site-calculo-shelf-life/" target="_blank" rel="noopener noreferrer" class="btn1">Github</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="img/naturaproject.webp" alt="Project 2">
+      <h2><span>Site de cosméticos da Natura</span></h2>
+      <p>Site desenvolvido em inspiração com a loja de cosméticos "Natura", feito em grupo como trabalho de faculdade, explorando e utilizando o máximo de recursos como HTML, CSS e JavaScript</p>
+      <div class="buttons">
+        <a href="https://projeto-natura.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn1">Ver Projeto</a>
+        <a href="https://github.com/breninz/projeto-natura" target="_blank" rel="noopener noreferrer" class="btn1">Github</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="img/" alt="Project 3">
+      <h2><span>Aguarde...</span></h2>
+      <p>Aguarde...</p>
+    </div>
+
+  </div>
+</section>
 
     <footer>
         <div class="footer-container">
